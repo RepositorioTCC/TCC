@@ -47,15 +47,12 @@ export class Jogo {
   }
 
   iniciarCronometro() {
-    const larguraTela = window.innerWidth;
-    const velocidade = (larguraTela + 200) / this.tempoTotal; 
-    
     this.intervalo = setInterval(() => {
       this.tempoDecorrido++;
-      const distanciaPercorrida = velocidade * this.tempoDecorrido;
+      const progresso = (this.tempoDecorrido / this.tempoTotal) * 100;
       
-      
-      this.elementoProfessor.style.right = `${larguraTela - distanciaPercorrida}px`;
+      this.elementoProfessor.style.left = `${progresso}%`;
+      this.elementoProfessor.style.transform = `translateX(-${progresso}%)`;
       
       if (this.tempoDecorrido >= this.tempoTotal) {
         clearInterval(this.intervalo);
