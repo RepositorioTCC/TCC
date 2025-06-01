@@ -23,12 +23,11 @@ class Jogo {
   }
 
   startGifLoop() {
-    if (this.resetGifInterval) {
-      clearInterval(this.resetGifInterval);
-    }
-    this.resetGifInterval = setInterval(() => {
-      this.resetGifAnimation(this.currentGif);
-    }, 3000);
+    this.professorGif.src = ''; // Limpa a src
+    this.professorGif.src = 'imagem/Caminhando.gif'; // Recarrega
+    this.currentGif = 'Caminhando.gif';
+    this.professorGif.style.width = '200px';
+    this.professorGif.style.height = '200px';
   }
 
   resetGifAnimation(gifName) {
@@ -41,7 +40,7 @@ class Jogo {
     clearInterval(this.resetGifInterval);
     this.resetGifAnimation(newGif);
     setTimeout(() => {
-      this.resetGifAnimation('caminhando.gif');
+      this.resetGifAnimation('Caminhando.gif');
       this.startGifLoop();
     }, duration);
   }
