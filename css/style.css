@@ -325,10 +325,7 @@ body:not(.MainBody) {
 }
 
 .pergunta {
-  position: relative;
-  margin: 20px 0;
-  font-weight: bold;
-  background-image: url('imagem/LousaSemFundo.png');
+  background-image: url('../imagem/LousaSemFundo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -338,6 +335,8 @@ body:not(.MainBody) {
   align-items: center;
   justify-content: center;
   order: 0;
+  color: white;
+  background-color: transparent;
 }
 
 .texto-pergunta {
@@ -345,8 +344,8 @@ body:not(.MainBody) {
   color: white;
   text-align: center;
   max-width: 80%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Aumentado contraste */
+  padding: 15px;
   border-radius: 5px;
 }
 
