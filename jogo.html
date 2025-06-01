@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo Domínios</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="MainBody">
+    <nav class="MainNavegacao">
+      <a href="index.html">Início</a>
+      <a href="jogo.html">Jogo</a>
+      <a href="#">Quem nós somos</a>
+    </nav>
+
+    <div class="jogo">
+      <div id="pergunta" class="pergunta">
+        <div class="texto-pergunta"></div>
+      </div>
+      <div id="professor" class="professor">
+        <img src="imagem/caminhando.gif" alt="Professor" id="professorGif" />
+      </div>
+      <div id="opcoes" class="opcoes"></div>
+      <div class="barra-vida">
+        <div id="vidaJogador" class="vida cheia"></div>
+      </div>
+      <div class="pontuacao" id="pontuacao">Pontuação: 0</div>
+    </div>
+
+    <script src="js/perguntas.js"></script>
+    <script src="js/jogo.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
