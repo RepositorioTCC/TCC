@@ -1,64 +1,66 @@
 class Jogo {
-  constructor(perguntas) {
-    this.perguntas = this.embaralharPerguntas(perguntas);
-    this.indicePergunta = 0;
-    this.pontuacao = 0;
-    this.tempoTotal = 60;
-    this.tempoDecorrido = 0;
-    this.vidaJogador = 100;
-    this.vidaProfessor = 100;
-    this.respostasSelecionadas = [];
+    constructor(perguntas) {
+        this.perguntas = this.embaralharPerguntas(perguntas);
+        this.indicePergunta = 0;
+        this.pontuacao = 0;
+        this.tempoTotal = 60;
+        this.tempoDecorrido = 0;
+        this.vidaJogador = 100;
+        this.vidaProfessor = 100;
+        this.respostasSelecionadas = [];
 
-    this.elementoPergunta = document.querySelector('.texto-pergunta');
-    this.elementoOpcoes = document.getElementById('opcoes');
-    this.barraVidaJogador = document.getElementById('vidaJogador');
-    this.elementoProfessor = document.getElementById('professor');
-    this.professorGif = document.getElementById('professorGif');
-    this.resetGifInterval = null;
-    this.currentGif = 'caminhando.gif';
+        this.elementoPergunta = document.querySelector('.texto-pergunta');
+        this.elementoOpcoes = document.getElementById('opcoes');
+        this.barraVidaJogador = document.getElementById('vidaJogador');
+        this.elementoProfessor = document.getElementById('professor');
+        this.professorGif = document.getElementById('professorGif');
+        this.resetGifInterval = null;
+        this.currentGif = 'Caminhando.gif';
 
-    this.startGifLoop();
-    this.iniciarCronometro();
-    this.carregarPergunta();
-  }
+        this.startGifLoop();
+        this.iniciarCronometro();
+        this.carregarPergunta();
+    }
 
-  startGifLoop() {
-    this.professorGif.src = ''; // Limpa a src
-    this.professorGif.src = 'imagem/Caminhando.gif'; // Recarrega
-    this.currentGif = 'Caminhando.gif';
-    this.professorGif.style.width = '200px';
-    this.professorGif.style.height = '200px';
-  }
+    startGifLoop() {
+        if (this.resetGifInterval) {
+            clearInterval(this.resetGifInterval);
+        }
+        this.resetGifInterval = setInterval(() => {
+            this.resetGifAnimation(this.currentGif);
+        }, 3000);
+    }
 
-  resetGifAnimation(gifName) {
-    this.professorGif.src = '';
-    this.professorGif.src = `imagem/${gifName}`;
-    this.currentGif = gifName;
-  }
+    resetGifAnimation(gifName) {
+        this.professorGif.src = '';
+        this.professorGif.src = `imagem/${gifName}`;
+        this.currentGif = gifName;
+        this.professorGif.style.width = '200px';
+        this.professorGif.style.height = '200px';
+    }
 
-  changeTemporaryGif(newGif, duration = 5000) {
-    clearInterval(this.resetGifInterval);
-    this.resetGifAnimation(newGif);
-    setTimeout(() => {
-      this.resetGifAnimation('Caminhando.gif');
-      this.startGifLoop();
-    }, duration);
-  }
+    changeTemporaryGif(newGif, duration = 5000) {
+        clearInterval(this.resetGifInterval);
+        this.resetGifAnimation(newGif);
+        setTimeout(() => {
+            this.resetGifAnimation('Caminhando.gif');
+            this.startGifLoop();
+        }, duration);
+    }
 
-  iniciarCronometro() {
+    iniciarCronometro() {
     this.intervalo = setInterval(() => {
-      this.tempoDecorrido++;
-      const progresso = (this.tempoDecorrido / this.tempoTotal) * 100;
-      
-      this.elementoProfessor.style.left = `${progresso}%`;
-      this.elementoProfessor.style.transform = `translateX(-${progresso}%)`;
-      
-      if (this.tempoDecorrido >= this.tempoTotal) {
-        clearInterval(this.intervalo);
-        this.finalizarJogo(false, 'Tempo esgotado!');
-      }
+        this.tempoDecorrido++;
+
+        const progresso = Math.min(100, (this.tempoDecorrido / this.tempoTotal) * 100);
+        this.elementoProfessor.style.transform = `translateX(${progresso}%)`;
+        
+        if (this.tempoDecorrido >= this.tempoTotal) {
+            clearInterval(this.intervalo);
+            this.finalizarJogo(false, 'Tempo esgotado!');
+        }
     }, 1000);
-  }
+}
 
   atualizarBarraVida(barra, vida) {
     barra.style.width = `${vida}%`;

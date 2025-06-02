@@ -1,511 +1,531 @@
 :root {
-  --cor-fundo: #F5F5DC;
-  --cor-texto: #4B4B2C;
-  --cor-professor: #8F9779;
-  --cor-vida-cheia: #4B7F52;
-  --cor-vida-media: #D2B48C;
-  --cor-vida-baixa: #8B4513;
-  --cor-borda: #4B4B2C;
-  --MainCorFundo: #1a3a2f;
-  --MainCorTexto: #ecf0f1;
-  --MainCorCabecalho: #0d261c;
-  --MainCorDestaque: #27ae60;
-  --MainCorBotao: #2ecc71;
-  --MainCorBorda: #1e8449;
-  --MainCorDetalhe: #f1c40f;
-  --MainCorSecundaria: #3498db;
+    --cor-fundo: #F5F5DC;
+    --cor-texto: #4B4B2C;
+    --cor-professor: #8F9779;
+    --cor-vida-cheia: #4B7F52;
+    --cor-vida-media: #D2B48C;
+    --cor-vida-baixa: #8B4513;
+    --cor-borda: #4B4B2C;
+    --MainCorFundo: #1a3a2f;
+    --MainCorTexto: #ecf0f1;
+    --MainCorCabecalho: #0d261c;
+    --MainCorDestaque: #27ae60;
+    --MainCorBotao: #2ecc71;
+    --MainCorBorda: #1e8449;
+    --MainCorDetalhe: #f1c40f;
+    --MainCorSecundaria: #3498db;
 }
 
 .MainBody {
-  font-family: 'Press Start 2P', cursive;
-  background-color: var(--MainCorFundo);
-  color: var(--MainCorTexto);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--MainCorFundo);
+    color: var(--MainCorTexto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 .MainCabecalho {
-  background-color: var(--MainCorCabecalho);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 3px solid var(--MainCorDetalhe);
+    background-color: var(--MainCorCabecalho);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--MainCorDetalhe);
 }
 
 .MainConteinerLogo {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .MainLogo {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: 2px solid var(--MainCorDetalhe);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--MainCorDetalhe);
 }
 
 .MainSlogan p {
-  font-size: 0.8rem;
-  margin: 0;
-  color: var(--MainCorDetalhe);
+    font-size: 0.8rem;
+    margin: 0;
+    color: var(--MainCorDetalhe);
 }
 
 .MainPaletaCores {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .MainCaixaCor {
-  background-color: var(--MainCorDestaque);
-  color: var(--MainCorTexto);
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  font-size: 0.8rem;
-  font-weight: bold;
+    background-color: var(--MainCorDestaque);
+    color: var(--MainCorTexto);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .MainNavegacao {
-  background-color: var(--MainCorDestaque);
-  padding: 1.2rem;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  text-transform: uppercase;
+    background-color: var(--MainCorDestaque);
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    text-transform: uppercase;
 }
 
 .MainNavegacao a {
-  color: var(--MainCorTexto);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s;
+    color: var(--MainCorTexto);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
 }
 
 .MainNavegacao a:hover {
-  color: var(--MainCorDetalhe);
+    color: var(--MainCorDetalhe);
 }
 
 .MainPrincipal {
-  padding: 2.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .MainDestaque {
-  text-align: center;
-  margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .MainTituloPrincipal {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--MainCorDetalhe);
-  text-shadow: 3px 3px 0 var(--MainCorCabecalho);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--MainCorDetalhe);
+    text-shadow: 3px 3px 0 var(--MainCorCabecalho);
 }
 
 .MainDescricaoDestaque {
-  background-color: rgba(39, 174, 96, 0.2);
-  padding: 1.5rem;
-  display: inline-block;
-  text-align: center;
-  max-width: 800px;
-  border: 2px dashed var(--MainCorDetalhe);
-  line-height: 1.8;
-}
-
-.MainArteDestaque {
-  margin-bottom: 3rem;
-  position: relative;
-  text-align: center;
+    background-color: rgba(39, 174, 96, 0.2);
+    padding: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    max-width: 800px;
+    border: 2px dashed var(--MainCorDetalhe);
+    line-height: 1.8;
 }
 
 .MainImagemDestaque {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-  cursor: pointer;
-  border: 4px solid var(--MainCorDetalhe);
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
+    width: 900%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border: 4px solid var(--MainCorDetalhe);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
 }
 
 .MainImagemDestaque:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .MainDescricaoImagem {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.9rem;
-  text-align: center;
-  margin: 1.5rem auto 0;
-  padding: 1rem;
-  background-color: var(--MainCorCabecalho);
-  border-radius: 0.5rem;
-  display: none;
-  max-width: 600px;
-  border: 1px solid var(--MainCorDetalhe);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 1.5rem auto 0;
+    padding: 1rem;
+    background-color: var(--MainCorCabecalho);
+    border-radius: 0.5rem;
+    display: none;
+    max-width: 600px;
+    border: 1px solid var(--MainCorDetalhe);
 }
 
 .MainBotoesAcao {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
 
 .MainSecaoIcones {
-  background-color: var(--MainCorCabecalho);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 3rem;
-  border: 2px solid var(--MainCorDetalhe);
+    background-color: var(--MainCorCabecalho);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    border: 2px solid var(--MainCorDetalhe);
 }
 
 .MainConteinerIcones {
-  display: flex;
-  justify-content: space-around;
-  max-width: 600px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .MainConteinerIcones i {
-  font-size: 2rem;
-  color: var(--MainCorDetalhe);
-  transition: transform 0.3s;
+    font-size: 2rem;
+    color: var(--MainCorDetalhe);
+    transition: transform 0.3s;
 }
 
 .MainConteinerIcones i:hover {
-  transform: scale(1.2);
-}
-
-.MainBiomasBrasileiros {
-  margin-bottom: 3rem;
+    transform: scale(1.2);
 }
 
 .MainTituloSecao {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: var(--MainCorDetalhe);
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--MainCorDetalhe);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1rem;
 }
 
 .MainTituloSecao::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--MainCorDetalhe);
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--MainCorDetalhe);
 }
 
 .MainGradeBiomas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .MainImagemBioma {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-  border: 3px solid var(--MainCorDetalhe);
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    border: 3px solid var(--MainCorDetalhe);
 }
 
 .MainImagemBioma:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
 .MainCerrado {
-  border-color: #f39c12;
+    border-color: #f39c12;
 }
 
 .MainMaresDeMorros {
-  border-color: #16a085;
+    border-color: #16a085;
 }
 
 .MainCaatinga {
-  border-color: #e67e22;
+    border-color: #e67e22;
 }
 
 .MainAraucaria {
-  border-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 .MainPradaria {
-  border-color: #f1c40f;
+    border-color: #f1c40f;
 }
 
 .MainDestaqueArtista {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--MainCorCabecalho);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  margin-top: 2rem;
-  border: 2px solid var(--MainCorDetalhe);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--MainCorCabecalho);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    border: 2px solid var(--MainCorDetalhe);
 }
 
 .MainInfoArtista {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .MainMiniaturaArtista {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: 2px solid var(--MainCorDetalhe);
-  object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--MainCorDetalhe);
+    object-fit: cover;
 }
 
 .MainInfoArtista p {
-  margin: 0;
-  font-size: 0.8rem;
+    margin: 0;
+    font-size: 0.8rem;
 }
 
 .MainInfoArtista p:first-child {
-  font-weight: bold;
-  color: var(--MainCorDetalhe);
-  font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--MainCorDetalhe);
+    font-size: 0.9rem;
 }
 
 .MainBotao {
-  background-color: var(--MainCorBotao);
-  color: var(--MainCorTexto);
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.8rem;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    background-color: var(--MainCorBotao);
+    color: var(--MainCorTexto);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .MainBotao:hover {
-  background-color: var(--MainCorDetalhe);
-  color: var(--MainCorCabecalho);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-body:not(.MainBody) {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
+    background-color: var(--MainCorDetalhe);
+    color: var(--MainCorCabecalho);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 .jogo {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 800px;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 500px;
 }
 
 .pergunta {
-  background-image: url('../imagem/LousaSemFundo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 20px;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  order: 0;
-  color: white;
-  background-color: transparent;
+    order: 1;
+    position: relative;
+    margin: 20px 0;
+    font-weight: bold;
+    background-image: url('../imagem/LousaSemFundo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 0;
+    z-index: 80;
+    color: white;
+    background-color: transparent;
 }
 
 .texto-pergunta {
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  max-width: 80%;
-  background-color: rgba(0, 0, 0, 0.7); /* Aumentado contraste */
-  padding: 15px;
-  border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .professor {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  bottom: 20px;
-  left: 20px;
-  margin: -30px auto 10px;
-  z-index: 100;
-  transition: right 0.5s linear;
+    order: 2;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+    z-index: 100;
+    transition: left 0.5s linear;
+    min-width: 150px;
+    visibility: visible !important;
 }
 
 .professor img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .opcoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  justify-items: center;
-  margin-top: 20px;
-  background-image: url('../imagem/TurmaSemFundo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 20px;
-  min-height: 200px;
-  order: 2;
+    order: 3;
+    position: relative;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    background-image: url('../imagem/TurmaSemFundo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    min-height: 200px;
+    order: 2;
+    z-index: 20;
 }
 
 .opcoes button {
-  display: block;
-  width: 90%;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: var(--cor-vida-media);
-  border: 2px solid var(--cor-borda);
-  color: var(--cor-texto);
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--cor-vida-media);
+    border: 2px solid var(--cor-borda);
+    color: var(--cor-texto);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .opcoes button:hover {
-  background-color: var(--cor-professor);
-  transform: scale(1.05);
+    background-color: var(--cor-professor);
+    transform: scale(1.05);
 }
 
 .opcoes button.selecionado {
-  background-color: var(--cor-vida-cheia);
+    background-color: var(--cor-vida-cheia);
 }
 
 .opcoes button#confirmar {
-  grid-column: span 2;
-  justify-self: center;
-  background-color: var(--cor-vida-media);
-  margin-top: 20px;
-  width: 60%;
-  border: 2px solid var(--cor-borda);
-  color: var(--cor-texto);
+    grid-column: span 2;
+    justify-self: center;
+    background-color: var(--cor-vida-media);
+    margin-top: 20px;
+    width: 60%;
+    border: 2px solid var(--cor-borda);
+    color: var(--cor-texto);
 }
 
 .barra-vida {
-  background-color: var(--cor-vida-media);
-  border-radius: 5px;
-  margin: 10px auto 5px;
-  position: relative;
-  height: 20px;
-  width: 80%;
-  overflow: hidden;
-  border: 2px solid var(--cor-borda);
-  order: 3;
+    background-color: var(--cor-vida-media);
+    border-radius: 5px;
+    margin: 10px auto 5px;
+    position: relative;
+    height: 20px;
+    width: 80%;
+    overflow: hidden;
+    border: 2px solid var(--cor-borda);
+    order: 3;
 }
 
 .vida {
-  background-color: var(--cor-vida-cheia);
-  height: 100%;
-  transition: width 0.5s ease, background-color 0.5s ease;
-}
-
-.pontuacao {
-  font-size: 18px;
-  margin: 5px auto 20px;
-  font-weight: bold;
-  order: 4;
+    background-color: var(--cor-vida-cheia);
+    height: 100%;
+    transition: width 0.5s ease, background-color 0.5s ease;
 }
 
 .vida.baixa {
-  background-color: var(--cor-vida-baixa);
+    background-color: var(--cor-vida-baixa);
 }
 
 .vida.media {
-  background-color: var(--cor-vida-media);
+    background-color: var(--cor-vida-media);
 }
 
 .vida.cheia {
-  background-color: var(--cor-vida-cheia);
+    background-color: var(--cor-vida-cheia);
+}
+
+.pontuacao {
+    font-size: 18px;
+    margin: 5px auto 20px;
+    font-weight: bold;
+    order: 4;
 }
 
 @media (max-width: 768px) {
-  .MainCabecalho {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .MainNavegacao {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .MainTituloPrincipal {
-    font-size: 1.8rem;
-  }
-  
-  .MainGradeBiomas {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .MainCabecalho {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .MainNavegacao {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .MainTituloPrincipal {
+        font-size: 1.8rem;
+    }
+    
+    .MainGradeBiomas {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .opcoes {
-    grid-template-columns: 1fr;
-  }
-  
-  .opcoes button#confirmar {
-    width: 90%;
-  }
+    .opcoes {
+        margin-top: 200px;
+        padding-top: 160px;
+    }
+    
+    .opcoes button#confirmar {
+        width: 90%;
+    }
+
+    .professor {
+        width: 150px;
+        height: 150px;
+        top: 50px;
+
+        left: 5px;
+    }
+
+    .pergunta {
+        min-height: 150px;
+        padding: 15px;
+    }
+    
+    .texto-pergunta {
+        font-size: 16px;
+    }
+
+    .MainImagemDestaque {
+        width: 95%;
+    }
+    
+    .MainPrincipal {
+        padding: 1.5rem 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .MainGradeBiomas {
-    grid-template-columns: 1fr;
-  }
-  
-  .MainBotoesAcao {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .MainDestaqueArtista {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
+    .MainGradeBiomas {
+        grid-template-columns: 1fr;
+    }
+    
+    .MainBotoesAcao {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .MainDestaqueArtista {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
 
-  .professor {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .pergunta {
-    background-image: url('../imagem/LousaSemFundo.png');
-    min-height: 150px;
-    padding: 15px;
-  }
-  
-  .texto-pergunta {
-    font-size: 16px;
-  }
+    .professor {
+        width: 120px;
+        height: 120px;
+        bottom: 150px;
+        left: 2px;
+    }
+
+    .jogo {
+      min-height: 400px;
+      overflow: visible;
+    }
+    
+    .opcoes {
+        margin-top: 170px;
+        padding-top: 130px;
+    }
 }
