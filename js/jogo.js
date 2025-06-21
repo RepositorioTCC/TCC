@@ -3,7 +3,7 @@ class Jogo {
         this.perguntas = this.embaralharPerguntas(perguntas);
         this.indicePergunta = 0;
         this.pontuacao = 0;
-        this.tempoTotal = 60;
+        this.tempoTotal = 30;
         this.tempoDecorrido = 0;
         this.vidaJogador = 100;
         this.vidaProfessor = 100;
@@ -49,17 +49,39 @@ class Jogo {
     }
 
     iniciarCronometro() {
-    this.intervalo = setInterval(() => {
-        this.tempoDecorrido++;
+    this.elementoProfessor.style.left = '0';
+    
+    const calcularPosicaoFinal = () => {
+        return window.innerWidth - this.elementoProfessor.offsetWidth;
+    };
 
-        const progresso = Math.min(100, (this.tempoDecorrido / this.tempoTotal) * 100);
-        this.elementoProfessor.style.transform = `translateX(${progresso}%)`;
+    const posicaoFinal = calcularPosicaoFinal();
+    let movimentoConcluido = false;
+
+    this.intervalo = setInterval(() => {
+        if (movimentoConcluido) return;
         
-        if (this.tempoDecorrido >= this.tempoTotal) {
+        this.tempoDecorrido++;
+        
+        const progresso = Math.min(100, (this.tempoDecorrido / this.tempoTotal) * 100);
+        const posicaoAtual = (progresso * posicaoFinal) / 100;
+        
+        if (posicaoAtual >= posicaoFinal) {
+            this.elementoProfessor.style.left = `${posicaoFinal}px`;
+            movimentoConcluido = true;
             clearInterval(this.intervalo);
             this.finalizarJogo(false, 'Tempo esgotado!');
+            return;
         }
+        
+        this.elementoProfessor.style.left = `${posicaoAtual}px`;
     }, 1000);
+
+    window.addEventListener('resize', () => {
+        if (movimentoConcluido) {
+            this.elementoProfessor.style.left = `${calcularPosicaoFinal()}px`;
+        }
+    });
 }
 
   atualizarBarraVida(barra, vida) {

@@ -4,29 +4,29 @@ const perguntas = [
     opcoes: [
       "Amazônico",
       "Cerrado",
-      "Caatinga",
-      "Mata Atlântica",
-      "Pampas",
-      "Pantanal"
+      "Caatingas",
+      "Araucárias",
+      "Pradarias",
+      "Mares de morros"
     ],
     respostasCertas: [
       "Amazônico",
       "Cerrado",
-      "Caatinga",
-      "Mata Atlântica",
-      "Pampas",
-      "Pantanal"
+      "Caatingas",
+      "Araucárias",
+      "Pradarias",
+      "Mares de morros"
     ]
   },
   {
     texto: "Qual domínio é caracterizado por clima equatorial úmido e floresta densa?",
     opcoes: [
       "Amazônico",
-      "Caatinga",
+      "Caatingas",
       "Cerrado",
-      "Pantanal",
-      "Pampas",
-      "Mata Atlântica"
+      "Araucárias",
+      "Pradarias",
+      "Mares de morros"
     ],
     respostasCertas: ["Amazônico"]
   },
@@ -34,49 +34,37 @@ const perguntas = [
     texto: "Qual domínio possui vegetação adaptada à seca e clima semiárido?",
     opcoes: [
       "Cerrado",
-      "Caatinga",
-      "Pantanal",
-      "Pampas",
-      "Mata Atlântica",
+      "Caatingas",
+      "Mares de morros",
+      "Pradarias",
+      "Araucárias",
       "Amazônico"
     ],
-    respostasCertas: ["Caatinga"]
+    respostasCertas: ["Caatingas"]
   },
   {
-    texto: "Quais domínios possuem ocorrência frequente de queimadas naturais?",
-    opcoes: [
-      "Cerrado",
-      "Pantanal",
-      "Caatinga",
-      "Mata Atlântica",
-      "Pampas",
-      "Amazônico"
-    ],
-    respostasCertas: ["Cerrado", "Pantanal", "Caatinga"]
-  },
-  {
-    texto: "Qual domínio é caracterizado por planícies alagadas e rica biodiversidade aquática?",
+    texto: "Qual unidade paisagística é caraccterizada por planícies alagadas e rica biodiversidade aquática?",
     opcoes: [
       "Pantanal",
-      "Caatinga",
+      "Caatingas",
       "Amazônico",
-      "Pampas",
+      "Pradarias",
       "Cerrado",
-      "Mata Atlântica"
+      "Mares de morros"
     ],
     respostasCertas: ["Pantanal"]
   },
   {
     texto: "Quais domínios apresentam vegetação predominantemente herbácea?",
     opcoes: [
-      "Pampas",
-      "Pantanal",
-      "Mata Atlântica",
-      "Caatinga",
+      "Pradarias",
+      "Araucária",
+      "Mares de morros",
+      "Caatingas",
       "Cerrado",
       "Amazônico"
     ],
-    respostasCertas: ["Pampas", "Pantanal"]
+    respostasCertas: ["Pradarias"]
   },
   {
     texto: "Qual das afirmações apresenta uma característica INCORRETA sobre o domínio morfoclimático dos Mares de Morros?",
@@ -96,7 +84,7 @@ const perguntas = [
       "Amazônico",
       "Mares de morros",
       "Cerrado",
-      "Caatinga",
+      "Caatingas",
       "Araucárias",
       "Pradarias"
     ],
@@ -116,5 +104,29 @@ const perguntas = [
       "É caracterizado por um clima tropical, com alternância de verões quentes e chuvosos e invernos secos",
       "Expansão da agricultura e a pecuária extensiva são as principais ameaças ao Cerrado",
       "A fauna do Cerrado é rica em biodiversidade, abrigando diversas espécies endêmicas"]
+  },
+  {
+    texto: " Qual domínio morfoclimático é conhecido como berço das águas?",
+    opcoes: [
+      "Amazônico",
+      "Mares de morros",
+      "Cerrado",
+      "Caatingas",
+      "Araucárias",
+      "Pradarias"
+    ],
+    respostasCertas: ["Cerrado"]
+  },
+  {
+    texto: "Quais áreas entre domínios podem ser consideradas Faixas de transição?",
+    opcoes: [
+      "Mata dos cocais",
+      "Araucárias",
+      "Agreste",
+      "Complexo do Pantanal",
+      "Cerrado",
+      "Mata Atlântica"
+    ],
+    respostasCertas: ["Mata dos Cocais”, “Agreste”, “Complexo do Pantanal"]
   }
 ];

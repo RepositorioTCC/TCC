@@ -344,9 +344,10 @@
     height: 200px;
     margin: 5px auto;
     z-index: 100;
-    transition: left 0.5s linear;
+    transition: left 1.5s linear;
     min-width: 150px;
     visibility: visible !important;
+    transform: translateX(0);
 }
 
 .professor img {
