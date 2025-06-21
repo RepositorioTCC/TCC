@@ -129,4 +129,4 @@ const perguntas = [
     ],
     respostasCertas: ["Mata dos Cocais”, “Agreste”, “Complexo do Pantanal"]
   }
-];
+]
